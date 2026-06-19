@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zugravul casei tale-Finisaje -Renovari Timisoara — {{TAGLINE}}">
+    <meta property="og:title" content="Zugravul casei tale-Finisaje -Renovari Timisoara | Bucuresti">
+    <meta property="og:description" content="{{TAGLINE}}">
+    <title>Zugravul casei tale-Finisaje -Renovari Timisoara | Bucuresti</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --primary: {
+                    {
+                    COLOR
+                }
+            }
+
+            ;
+
+            --accent: {
+                    {
+                    ACCENT
+                }
+            }
+
+            ;
+            --dark: #0f172a;
+            --gray: #475569;
+            --light: #f8fafc;
+            --white: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                'Helvetica Neue', Arial, sans-serif;
+            color: var(--dark);
+            line-height: 1.7;
+            background-color: var(--white);
+        }
+
+        /* ── NAV ─────────────────────────────────────────────── */
+        .nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 2rem;
+            z-index: 20;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-brand {
+            color: var(--dark);
+            font-size: 1.25rem;
+            font-weight: 800;
+            text-decoration: none;
+            letter-spacing: -0.03em;
+        }
+
+        .nav-phone-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            background: #25D366;
+            padding: 0.65rem 1.3rem;
+            border-radius: 12px;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+        }
+
+        .nav-phone-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.3);
+        }
+
+        /* ── HERO ────────────────────────────────────────────── */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 6rem 1.5rem 4rem;
+            background: var(--white);
+            overflow: hidden;
+        }
+
+        .hero-container {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+            width: 100%;
+        }
+
+        .hero-content {
+            text-align: left;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.04);
+            color: var(--dark);
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            font-weight: 900;
+            color: var(--dark);
+            line-height: 1.15;
+            margin-bottom: 1.2rem;
+            letter-spacing: -0.03em;
+        }
+
+        .hero-tagline {
+            font-size: clamp(1.05rem, 2vw, 1.25rem);
+            color: var(--gray);
+            margin-bottom: 2.5rem;
+            max-width: 580px;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: #25D366;
+            color: #fff;
+            font-size: 1.05rem;
+            font-weight: 700;
+            padding: 1.1rem 2.4rem;
+            border-radius: 12px;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.25);
+            transition: all 0.25s ease;
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.35);
+        }
+
+        .hero-sub {
+            display: block;
+            color: var(--gray);
+            font-size: 0.85rem;
+            margin-top: 1.25rem;
+            opacity: 0.85;
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            height: 580px;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+        }
+
+        .hero-bg {
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=85');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* ── STATS ───────────────────────────────────────────── */
+        .stats {
+            background: var(--primary);
+            padding: 4.5rem 1.5rem;
+        }
+
+        .stats-inner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .stat-num {
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            color: #fff;
+            line-height: 1;
+            letter-spacing: -0.03em;
+        }
+
+        .stat-lbl {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 0.6rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+
+        /* ── SERVICES ────────────────────────────────────────── */
+        .services {
+            padding: 7rem 1.5rem;
+            background: var(--light);
+        }
+
+        .section-head {
+            text-align: center;
+            margin-bottom: 4rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-head h2 {
+            font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 0.8rem;
+            letter-spacing: -0.02em;
+        }
+
+        .section-head p {
+            color: var(--gray);
+            font-size: 1.05rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .svc-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            border-top: 4px solid var(--accent);
+            transition: all 0.3s ease;
+        }
+
+        .svc-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+        }
+
+        .svc-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--light);
+            color: var(--primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .svc-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 0.75rem;
+        }
+
+        .svc-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ── WHY US ──────────────────────────────────────────── */
+        .why {
+            padding: 7rem 1.5rem;
+            background: var(--white);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 3.5rem auto 0;
+        }
+
+        .why-item {
+            text-align: left;
+            padding: 2rem;
+            background: var(--light);
+            border-radius: 16px;
+            border: 1px solid rgba(0, 0, 0, 0.02);
+        }
+
+        .why-icon {
+            color: var(--accent);
+            margin-bottom: 1.25rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .why-item h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .why-item p {
+            font-size: 0.9rem;
+            color: var(--gray);
+            line-height: 1.6;
+        }
+
+        /* ── REVIEWS ─────────────────────────────────────────── */
+        .reviews {
+            padding: 7rem 1.5rem;
+            background: var(--light);
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .review-card {
+            background: var(--white);
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .stars {
+            color: #f59e0b;
+            font-size: 1rem;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.2rem;
+        }
+
+        .review-text {
+            font-size: 0.98rem;
+            color: var(--dark);
+            line-height: 1.75;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+
+        .review-name {
+            font-weight: 700;
+            font-size: 0.88rem;
+            color: var(--gray);
+            letter-spacing: 0.02em;
+        }
+
+        /* ── CTA SECTION ─────────────────────────────────────── */
+        .cta {
+            background: var(--primary);
+            padding: 7rem 1.5rem;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 1.2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            letter-spacing: -0.02em;
+        }
+
+        .cta-sub {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-phone-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: #25D366;
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: 1.1rem 2.6rem;
+            border-radius: 12px;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            letter-spacing: -0.01em;
+            transition: all 0.25s ease;
+        }
+
+        .cta-phone-btn:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        /* ── FOOTER ──────────────────────────────────────────── */
+        footer {
+            background: var(--dark);
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+            padding: 3rem 1.5rem;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        footer strong {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: #25D366;
+        }
+
+        /* ── FLOATING WHATSAPP BUTTON ────────────────────────── */
+        .float-call {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #25D366;
+            color: #fff;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+            z-index: 999;
+            transition: all 0.25s ease;
+        }
+
+        .float-call:hover {
+            transform: scale(1.08);
+            box-shadow: 0 12px 28px rgba(37, 211, 102, 0.4);
+        }
+
+        /* ── RESPONSIVE ──────────────────────────────────────── */
+        @media (max-width: 968px) {
+            .hero {
+                padding-top: 8rem;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero-content {
+                text-align: center;
+            }
+
+            .hero-tagline {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-image-wrapper {
+                height: 420px;
+                order: -1;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .nav {
+                padding: 1.5rem 1rem;
+            }
+
+            .nav-brand {
+                font-size: 1.1rem;
+            }
+
+            .stats-inner {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .why-item {
+                text-align: center;
+            }
+
+            .why-icon {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="https://wa.me/+40737568661" class="float-call" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+            <path
+                d="M12.01 2.012c-5.528 0-10.01 4.48-10.01 10.008 0 2.045.617 3.947 1.678 5.53L2 22l4.63-1.517a9.92 9.92 0 0 0 5.38 1.543c5.528 0 10.01-4.48 10.01-10.008 0-5.528-4.482-10.008-10.01-10.008zm5.955 14.18c-.24.675-1.185 1.23-1.635 1.275-.45.045-.885.21-2.91-.6-2.595-1.035-4.245-3.66-4.38-3.84-.12-.18-1.05-1.395-1.05-2.67 0-1.275.66-1.905.9-2.16.24-.255.525-.315.7-.315.18 0 .36 0 .51.015.165.015.39-.06.6.45.225.54.765 1.86.825 1.995.06.135.105.285.015.465-.09.18-.135.3-.27.465-.135.165-.285.375-.405.495-.135.135-.285.285-.12.57.165.285.735 1.215 1.575 1.965.108.097.218.187.33.27.705.585 1.245.765 1.545.915.3.15.48.12.66-.09.18-.21.765-.885.975-1.185.21-.3.42-.255.7-.15.285.105 1.8.855 2.115 1.005.315.15.525.225.6.36.075.135.075.765-.165 1.44z" />
+        </svg>
+    </a>
+
+    <section class="hero">
+        <nav class="nav">
+            <a href="#" class="nav-brand">Zugravul casei tale-Finisaje -Renovari Timisoara</a>
+            <a href="https://wa.me/+40737568661" class="nav-phone-btn">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                    <path
+                        d="M12.01 2.012c-5.528 0-10.01 4.48-10.01 10.008 0 2.045.617 3.947 1.678 5.53L2 22l4.63-1.517a9.92 9.92 0 0 0 5.38 1.543c5.528 0 10.01-4.48 10.01-10.008 0-5.528-4.482-10.008-10.01-10.008zm5.955 14.18c-.24.675-1.185 1.23-1.635 1.275-.45.045-.885.21-2.91-.6-2.595-1.035-4.245-3.66-4.38-3.84-.12-.18-1.05-1.395-1.05-2.67 0-1.275.66-1.905.9-2.16.24-.255.525-.315.7-.315.18 0 .36 0 .51.015.165.015.39-.06.6.45.225.54.765 1.86.825 1.995.06.135.105.285.015.465-.09.18-.135.3-.27.465-.135.165-.285.375-.405.495-.135.135-.285.285-.12.57.165.285.735 1.215 1.575 1.965.108.097.218.187.33.27.705.585 1.245.765 1.545.915.3.15.48.12.66-.09.18-.21.765-.885.975-1.185.21-.3.42-.255.7-.15.285.105 1.8.855 2.115 1.005.315.15.525.225.6.36.075.135.075.765-.165 1.44z" />
+                </svg>
+                +40737568661
+            </a>
+        </nav>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-badge">Bucuresti</span>
+                <h1>Zugravul casei tale-Finisaje -Renovari Timisoara</h1>
+                <p class="hero-tagline">{{TAGLINE}}</p>
+                <a href="https://wa.me/+40737568661" class="hero-cta">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path
+                            d="M12.01 2.012c-5.528 0-10.01 4.48-10.01 10.008 0 2.045.617 3.947 1.678 5.53L2 22l4.63-1.517a9.92 9.92 0 0 0 5.38 1.543c5.528 0 10.01-4.48 10.01-10.008 0-5.528-4.482-10.008-10.01-10.008zm5.955 14.18c-.24.675-1.185 1.23-1.635 1.275-.45.045-.885.21-2.91-.6-2.595-1.035-4.245-3.66-4.38-3.84-.12-.18-1.05-1.395-1.05-2.67 0-1.275.66-1.905.9-2.16.24-.255.525-.315.7-.315.18 0 .36 0 .51.015.165.015.39-.06.6.45.225.54.765 1.86.825 1.995.06.135.105.285.015.465-.09.18-.135.3-.27.465-.135.165-.285.375-.405.495-.135.135-.285.285-.12.57.165.285.735 1.215 1.575 1.965.108.097.218.187.33.27.705.585 1.245.765 1.545.915.3.15.48.12.66-.09.18-.21.765-.885.975-1.185.21-.3.42-.255.7-.15.285.105 1.8.855 2.115 1.005.315.15.525.225.6.36.075.135.075.765-.165 1.44z" />
+                    </svg>
+                    Trimite mesaj pe WhatsApp
+                </a>
+                <span class="hero-sub">Ofertă gratuită — răspundem în 24 de ore</span>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <div class="hero-bg"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-inner">
+            <div>
+                <div class="stat-num">10</div>
+                <div class="stat-lbl">ani de experienta</div>
+            </div>
+            <div>
+                <div class="stat-num">200</div>
+                <div class="stat-lbl">proiecte realizate</div>
+            </div>
+            <div>
+                <div class="stat-num">100</div>
+                <div class="stat-lbl">clienti satisfacji</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="sluzby">
+        <div class="section-head">
+            <h2>Servicii de zugravit si finisaje</h2>
+            <p>Renovari si amenajari interioare</p>
+        </div>
+        <div class="services-grid">
+            <div class="svc-card">
+                <div class="svc-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                        <path
+                            d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.3C.5 6.7.9 9.8 2.9 11.8c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.1z" />
+                    </svg>
+                </div>
+                <h3>Zugravit interior</h3>
+                <p>Vopsire si zugravit pereti si tavane</p>
+            </div>
+            <div class="svc-card">
+                <div class="svc-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                    </svg>
+                </div>
+                <h3>Gresie si faianta</h3>
+                <p>Montaj gresie si faianta pentru bai si bucatarii</p>
+            </div>
+            <div class="svc-card">
+                <div class="svc-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+                    </svg>
+                </div>
+                <h3>Parchet si placare</h3>
+                <p>Montaj parchet si placare cu marmura si piatra naturala</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why">
+        <div class="section-head">
+            <h2>De ce să ne alegi pe noi</h2>
+            <p>Valori esențiale care ne diferențiază de concurență</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-item">
+                <div class="why-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path
+                            d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.79-2.2-3.7-4.8-4.4z" />
+                    </svg>
+                </div>
+                <h4>Preț corect</h4>
+                <p>Prețuri transparente stabilite înainte de începerea lucrării. Fără surprize.</p>
+            </div>
+            <div class="why-item">
+                <div class="why-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path
+                            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                    </svg>
+                </div>
+                <h4>Punctualitate</h4>
+                <p>Respectăm termenele stabilite. Timpul tău este valoros pentru noi.</p>
+            </div>
+            <div class="why-item">
+                <div class="why-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path
+                            d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                </div>
+                <h4>Calitate</h4>
+                <p>Utilizăm materiale premium și tehnici verificate pentru rezultate durabile.</p>
+            </div>
+            <div class="why-item">
+                <div class="why-icon">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path
+                            d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z" />
+                    </svg>
+                </div>
+                <h4>Disponibilitate</h4>
+                <p>Suntem disponibili 7 zile din 7. Trimite-ne un mesaj oricând.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="recenze">
+        <div class="section-head">
+            <h2>Ce spun clienții noștri</h2>
+            <p>Recenzii și experiențe reale ale clienților mulțumiți</p>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="review-text">&#8212; {{REVIEW_1}}&#8221;</p>
+                <div class="review-name">&#8212; {{REVIEW_1_NAME}}</div>
+            </div>
+            <div class="review-card">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="review-text">&#8212; {{REVIEW_2}}&#8221;</p>
+                <div class="review-name">&#8212; {{REVIEW_2_NAME}}</div>
+            </div>
+            <div class="review-card">
+                <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="review-text">&#8212; {{REVIEW_3}}&#8221;</p>
+                <div class="review-name">&#8212; {{REVIEW_3_NAME}}</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta" id="kontakt">
+        <h2>Contactează-ne astăzi</h2>
+        <p class="cta-sub">Scrieti-ne pe WhatsApp pentru o oferta personalizata</p>
+        <a href="https://wa.me/+40737568661" class="cta-phone-btn">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                <path
+                    d="M12.01 2.012c-5.528 0-10.01 4.48-10.01 10.008 0 2.045.617 3.947 1.678 5.53L2 22l4.63-1.517a9.92 9.92 0 0 0 5.38 1.543c5.528 0 10.01-4.48 10.01-10.008 0-5.528-4.482-10.008-10.01-10.008zm5.955 14.18c-.24.675-1.185 1.23-1.635 1.275-.45.045-.885.21-2.91-.6-2.595-1.035-4.245-3.66-4.38-3.84-.12-.18-1.05-1.395-1.05-2.67 0-1.275.66-1.905.9-2.16.24-.255.525-.315.7-.315.18 0 .36 0 .51.015.165.015.39-.06.6.45.225.54.765 1.86.825 1.995.06.135.105.285.015.465-.09.18-.135.3-.27.465-.135.165-.285.375-.405.495-.135.135-.285.285-.12.57.165.285.735 1.215 1.575 1.965.108.097.218.187.33.27.705.585 1.245.765 1.545.915.3.15.48.12.66-.09.18-.21.765-.885.975-1.185.21-.3.42-.255.7-.15.285.105 1.8.855 2.115 1.005.315.15.525.225.6.36.075.135.075.765-.165 1.44z" />
+            </svg>
+            +40737568661
+        </a>
+    </section>
+
+    <footer>
+        <p>
+            <strong>Zugravul casei tale-Finisaje -Renovari Timisoara</strong> &bull; Bucuresti &bull;
+            <a href="https://wa.me/+40737568661">+40737568661</a>
+        </p>
+        <p style="margin-top:0.75rem; font-size:0.8rem; opacity: 0.7;">
+            &copy; Zugravul casei tale-Finisaje -Renovari Timisoara Bucuresti
+        </p>
+    </footer>
+
+</body>
+
+</html>
